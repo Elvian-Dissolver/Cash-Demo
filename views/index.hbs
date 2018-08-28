@@ -1,0 +1,32 @@
+{{!< layout }}
+    <section class="jumbotron text-center">
+      <div class="container">
+        <h1 class="jumbotron-heading">HacktivCASH</h1>
+        <p class="lead text-muted"> is obsessed with creating and sharing unique and authentic product experiences that stimulate our fans' imaginations and fuel their geek core.</p>
+        <p>
+          <a href="#" class="btn btn-primary">Browse our collection</a>
+          <a href="/add" class="btn btn-secondary">Contact us</a>
+        </p>
+      </div>
+    </section>
+
+    <div class="album text-muted">
+      <div class="container">
+
+        <div class="row">
+          {{#each items}}
+          <div class="card">
+            <img class="img-fluid" src="{{image}}" alt="Card image cap">
+            <p class="card-text">{{description}}</p>
+            <div class="text-center">
+              <a href="/detail/{{ id }}" class="btn btn-warning">Lihat</a>
+              <a href="#" class="btn btn-secondary">Masukkan ke keranjang</a>
+            </div>
+          </div>
+          {{/each}}
+          <! -- END of Cards-->
+        </div>
+
+      </div>
+    </div>
+
